@@ -1,0 +1,28 @@
+---
+title: "課堂模板練習"
+author: "Victor"
+date: "2020-09-23"
+output: output_format
+params:
+  id: "ˋ410973003"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Your code
+用指示安裝套件
+```{r}
+install.packages("googlesheets4")
+library(googlesheets4)
+library(V8)
+```
+```{r}
+library(knitr)
+purl("2020-09-30.Rmd")
+```
+```{r}
+3->a
+4->b
+```
