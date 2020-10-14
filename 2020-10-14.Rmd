@@ -1,0 +1,75 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*. 
+
+```{r}
+plot(cars)
+```
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
+
+The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
+```{r}
+"\u0928\u092e\u0938\u094d\u0924\u0947 \u0926\u0941\u0928\u093f\u092f\u093e"
+```
+```{r}
+20->my_age
+```
+
+```{r}
+my_age
+```
+```{r}
+myName <- "Mary"
+```
+
+```{r}
+length(myName)
+```
+```{r}
+dialogue <- c('小明說："明天不用上課。"',
+               '小花說："真的嗎？"')
+```
+```{r}
+cat("老師說換行要寫\'\\n\', \"\\\"是escape的意思")
+    ```
+    ```{r}
+    "<img src='https://ww"
+    ```
+    ```{r}
+    logi1 <- c(T,TRUE,F,FALSE,FALSE)
+sum(logi1)
+    ```
+```{r}
+# 10位學生的主系
+majors10_char <- c('經濟學系','社會學系','社會學系','經濟學系','經濟學系','社會學系','經濟學系','經濟學系','經濟學系','社會學系')
+
+typeof(majors10_char)
+class(majors10_char)
+```
+
+```{r}
+majors10_factor <- factor(majors10_char)
+typeof(majors10_factor)
+class(majors10_factor)
+```
+
+```{r}
+as.integer(majors10_factor) 
+```
+
+```{r}
+levels(majors10_factor)
+```
+
+```{r}
+#學生學號用字串較合理
+studentId <- c(410773002, 410773015)
+```
