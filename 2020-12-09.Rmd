@@ -1,0 +1,26 @@
+---
+title: "課堂練習模版"
+author: "Victor"
+date: "2020-12-08"
+output: output_format
+params:
+  id: "410973003"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Your code
+
+```{r}
+set.seed(2020)
+d1 <- sample(c(rep("4",10),rep("3",3),rep("7",3)), 25, replace=T)
+d2 <- sample(98:109, 25, replace=T)
+d3 <- sample(c("73", "74", "78", "83", "72"))
+d4 <- sample(1:120, 25, replace=T)
+d4 <- str_pad(d4, 3, side = "left", pad="0")
+schoolIds <- paste0(d1,d2,d3,d4)
+schoolIds
+```
+
